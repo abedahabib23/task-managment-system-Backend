@@ -1,2 +1,7 @@
 # Task Managment Systsm (AMTS)
-## “ATMS” is a browser-based system that allows individuals and small teams to create, assign, track, and complete tasks. Users can register an account, create projects, add tasks to each project, and monitor progress via a simple dashboard. 
+### “ATMS” is a browser-based system that allows individuals and small teams to create, assign, track, and complete tasks. Users can register an account, create projects, add tasks to each project, and monitor progress via a simple dashboard. 
+# tools
+## JWT for Auth
+## REST API 
+## MYSQL 
+
