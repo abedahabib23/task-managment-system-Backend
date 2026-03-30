@@ -14,7 +14,7 @@ class Project extends Model
         'user_id',
     ];
     protected $hidden = ['user_id'];
-    protected $with = ['owner'];
+    protected $with = ['owner','members','tasks'];
 
        public function owner()
     {

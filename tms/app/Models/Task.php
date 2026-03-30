@@ -23,7 +23,8 @@ class Task extends Model
     ];
    protected $with = [
     'creator',
-    'project'
+    'project',
+    'comments'
    ];
       public function creator()
     {
@@ -32,5 +33,9 @@ class Task extends Model
        public function project()
     {
         return $this->belongsTo(Project::class, 'project_id', 'id');
+    }
+     public function comments()
+    {
+        return $this->hasMany(Comment::class, 'task_id', 'id');
     }
 }

@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\CommentController;
 use App\Http\Controllers\Api\ProjectController;
 use App\Http\Controllers\Api\ProjectMemberController;
 use App\Http\Controllers\Api\TaskController;
@@ -29,6 +30,8 @@ Route::middleware('auth:api')->group(function () {
     Route::apiResource('/projects', ProjectController::class);
   Route::apiResource('projects.tasks', TaskController::class);
   Route::apiResource('projects.users', ProjectMemberController::class);
+    Route::apiResource('tasks.comments', CommentController::class);
+
 
 
 });
