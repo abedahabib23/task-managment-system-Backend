@@ -1,5 +1,10 @@
 # Task Managment Systsm (AMTS)
 ### “ATMS” is a browser-based system that allows individuals and small teams to create, assign, track, and complete tasks. Users can register an account, create projects, add tasks to each project, and monitor progress via a simple dashboard. 
+# Why Laravel?
+### Clean and organized code (MVC)
+### Easy database work (With Eloquent ORM)
+### Built-in security
+### Laravel is very popular
 # tools
 ### JWT for authentication
 ### REST API 
