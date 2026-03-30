@@ -38,4 +38,13 @@ class Task extends Model
     {
         return $this->hasMany(Comment::class, 'task_id', 'id');
     }
+        public function categories()
+    {
+        return $this->belongsToMany(
+            Category::class,
+            'task_categories',
+            'task_id',
+            'category_id'
+        );
+    }
 }
