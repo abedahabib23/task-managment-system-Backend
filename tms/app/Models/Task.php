@@ -47,4 +47,9 @@ class Task extends Model
             'category_id'
         );
     }
+
+     public function reminders()
+    {
+        return $this->hasMany(Reminder::class, 'task_id', 'id');
+    }
 }

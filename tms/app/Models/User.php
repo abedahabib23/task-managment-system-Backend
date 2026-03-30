@@ -83,6 +83,11 @@ class User extends Authenticatable implements JWTSubject
         return $this->hasMany(Category::class, 'user_id', 'id');
     }
 
+       public function reminders()
+    {
+        return $this->hasMany(Reminder::class, 'user_id', 'id');
+    }
+
 
 
 }
